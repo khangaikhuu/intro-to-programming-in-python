@@ -171,6 +171,12 @@ Ex-2.3 - If you could invite anyone, living or deceased, to dinner, who
 would you invite? Make a list that includes at least three people you’d like to
 invite to dinner. Then use your list to print a message to each person, inviting
 them to dinner.
+"""
+invitation_list = ['zuckerberg','elon','watson']
+print(f"{invitation_list[0].title()}, You are invited")
+print(f"{invitation_list[1].title()}, You are invited")
+print(f"{invitation_list[2].title()}, You are invited")
+"""
 Ex-2.4 - You just heard that one of your guests can’t make the
 dinner, so you need to send out a new set of invitations. You’ll have to think of
 someone else to invite.
@@ -180,6 +186,13 @@ someone else to invite.
     the name of the new person you are inviting.
     • Print a second set of invitation messages, one for each person who is still
     in your list.
+"""
+print(f"{invitation_list[2]} can't come to the dinner")
+invitation_list.remove('watson')
+invitation_list.append('harry potter')
+print(f"{invitation_list[2].title()}, You are invited to the dinner")
+
+"""
 Ex-2.5 - You just found a bigger dinner table, so now more space is
 available. Think of three more guests to invite to dinner.
     • Start with your program from Ex-2.3 or Ex-2.4. Add a print()
