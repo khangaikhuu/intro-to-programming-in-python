@@ -229,7 +229,7 @@ for car in cars:
         print(car.title())
 
 
-# Conditional Tests
+# Conditional Operators
 # ==/ != / < / > / <= / >=
 car = 'audi'
 car == 'bmw'
