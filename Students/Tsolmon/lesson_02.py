@@ -202,6 +202,9 @@ available. Think of three more guests to invite to dinner.
     • Use insert() to add one new guest to the middle of your list.
     • Use append() to add one new guest to the end of your list.
     • Print a new set of invitation messages, one for each person in your list.
+"""
+
+"""
 
 Ex-2.6 - You just found out that your new dinner table won’t
     arrive in time for the dinner, and you have space for only two guests.
