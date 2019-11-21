@@ -25,3 +25,5 @@ print("Hello Python")
 # variables example : x = 5, y = 4
 # Mathematical operations : 
 # comparisons
+person = "Zaya"
+print(person , "Hello")
