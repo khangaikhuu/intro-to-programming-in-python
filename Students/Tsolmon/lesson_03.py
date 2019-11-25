@@ -11,5 +11,5 @@ for value in range(1,1000000):
     print(value)
 
 dimensions=("huushuur","buuz", "omlet")
-dimensions[1] = "guliash"
+#dimensions[1] = "guliash"
 
