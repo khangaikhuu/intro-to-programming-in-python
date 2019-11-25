@@ -339,19 +339,28 @@ def splitter (splitted_text, word_counter_dictionary):
             word_counter_dictionary[i] = 1
 
 
+# Abstraction ->  2 * 2 = 4 f(x) = x * x
+# software -> It should have Abstraction!!!
+
+# 2 * 2 =  2 + 2
+# 3 * 3 = 3 + 3 + 3 = 9
+# 2 + 2 + 2 + 2 = 2 ^ 3 = 2 ** 3
+
 
 # 5. Defining a Function
 def greet_user():
     """Display a simple greeting."""
     print("Hello!")
 
-greet_user()
+greet_user() # calling a function/ usage of function
+
 
 # Passing Information to a Function
-def greet_user(username):
+def greet_user(username): # username - parameter
     """Display a simple greeting."""
     print(f"Hello, {username.title()}!")
-greet_user('jesse')
+
+greet_user('jesse') # argument
 
 # Arguments and Parameters
 """
@@ -371,7 +380,6 @@ def describe_pet(animal_type, pet_name):
     print(f"\nI have a {animal_type}.")
     print(f"My {animal_type}'s name is {pet_name.title()}.")
 
-
 describe_pet('hamster', 'harry')
 describe_pet('dog', 'willie')
 
@@ -389,16 +397,21 @@ def describe_pet(pet_name, animal_type='dog'):
     """Display information about a pet."""
     print(f"\nI have a {animal_type}.")
     print(f"My {animal_type}'s name is {pet_name.title()}.")
+
 describe_pet(pet_name='willie')
 # When you use default values, any parameter with a default value needs to be listed
 # after all the parameters that don’t have default values. This allows Python to con-
 # tinue interpreting positional arguments correctly.
 
+# f(x, y) = x + y
+# z = f(5, 6)
+# 
 # Return Values
 def get_formatted_name(first_name, last_name):
     """Return a full name, neatly formatted."""
     full_name = f"{first_name} {last_name}"
     return full_name.title()
+
 musician = get_formatted_name('jimi', 'hendrix')
 print(musician)
 
@@ -431,6 +444,8 @@ def build_person(first_name, last_name):
 
 musician = build_person('jimi', 'hendrix')
 print(musician)
+
+# null = None
 
 def build_person(first_name, last_name, age=None):
     """Return a dictionary of information about a person."""
@@ -467,17 +482,47 @@ while True:
     formatted_name = get_formatted_name(f_name, l_name)
 print(f"\nHello, {formatted_name}!")
 
+# dynamic typed language python name = "6"
+# name = 6
+# Python interpreter -> Parser -> name = integer -> Python Interpreter Memory name = integer(6)
+# name = 6
+# Parser -> Syntax Tree -> name  =  6
+# Compiler -> Interpreter 
+#     =
+#   /   \
+# name   6
+# exp = exp
+# variable = name
+# exp = 6 = > integer type
+
+# STORE NAME 6
+# 1011110111 0010101010 101
+
+# static typed language  int a = 1
+
+
 # Passing a List
 def greet_users(names):
     """Print a simple greeting to each user in the list."""
     for name in names:
         msg = f"Hello, {name.title()}!"
-    print(msg)
+        print(msg)
 
 usernames = ['hannah', 'ty', 'margot']
 greet_users(usernames)
 
+# Fibonacci number
+# F(0) = 0
+# F(1) = 0
+# F(x) = F(x - 1 ) + F(x - 2)    
 
+def F(x):
+    if x == 0:
+        return 0
+    elif x == 1:
+        return 1
+    else:
+        return F(x - 1) + F(x - 2)
 # 6. Storing Your Functions in Modules
 
 import pizza
@@ -485,12 +530,15 @@ pizza.make_pizza(16, 'pepperoni')
 pizza.make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')
 
 # from module_name import function_name
-# from pizza import make_pizza
-# make_pizza(16, 'pepperoni')
-# from pizza import make_pizza as mp
+from pizza import make_pizza
+make_pizza(16, 'pepperoni')
+from pizza import make_pizza as mp
 # mp(16, 'pepperoni')
 # mp(12, 'mushrooms', 'green peppers', 'extra cheese')
-# import pizza as p
+import pizza as p
+
+# Module
+import pizza as p
 # p.make_pizza(16, 'pepperoni')
 # p.make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')
 # from pizza import *

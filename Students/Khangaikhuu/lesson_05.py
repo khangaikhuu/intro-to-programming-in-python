@@ -1,4 +1,5 @@
 # # Python Classes
+# 
 # Object-oriented programming is one of the
 # most effective approaches to writing soft-
 # ware. In object-oriented programming you
@@ -7,22 +8,20 @@
 # classes. When you write a class, you define the general
 # behavior that a whole category of objects can have.
 
+# functional programming - Abstraction
+# imperative programming
+# object oriented programming - Abstraction
+# inheritance -> 
+
 
 # Creating the Dog Class
 class Dog:
-
-    """A simple attempt to model a dog."""
     def __init__(self, name, age):
-        """Initialize name and age attributes."""
         self.name = name
         self.age = age
-
     def sit(self):
-        """Simulate a dog sitting in response to a command."""
         print(f"{self.name} is now sitting.")
-
     def roll_over(self):
-        """Simulate rolling over in response to a command."""
         print(f"{self.name} rolled over!")
 
 my_dog = Dog('Willie', 6)
@@ -74,24 +73,28 @@ for each user.
 # Setting a Default Value for an Attribute
 
 class Car:
-
     def __init__(self, make, model, year):
         """Initialize attributes to describe a car."""
         self.make = make
         self.model = model
         self.year = year
         self.odometer_reading = 0
-
+        self.manifacturer = "Tesla"
     def get_descriptive_name(self):
         """Return a neatly formatted descriptive name."""
         long_name = f"{self.year} {self.manufacturer} {self.model}"
         return long_name.title()
-
     def read_odometer(self):
         """Print a statement showing the car's mileage."""
         print(f"This car has {self.odometer_reading} miles on it.")
+    def change_odometer(self, new_val):
+        if new_val < 1000:
+            self.change_odometer = new_val
+        else:
+            self.change_odometer = 999
 
     
+# Encapsulation information hiding
 
 my_new_car = Car('audi', 'a4', 2019)
 print(my_new_car.get_descriptive_name())
@@ -114,15 +117,16 @@ my_new_car.read_odometer()
 my_new_car.update_odometer(23)
 my_new_car.read_odometer()
 
-# Inheritance
+# Inheritance/ Extension
 class ElectricCar(Car):
-    """Represent aspects of a car, specific to electric vehicles."""
-
     def __init__(self, make, model, year):
         """Initialize attributes of the parent class."""
         super().__init__(make, model, year)
         self.battery_size = 75
-    
+        self.self_driving = True
+    def read_odometer(self): # Overwrite
+        """Print a statement showing the car's mileage."""
+        print(f"No i have not Odometer")
     def describe_battery(self):
         """Print a statement describing the battery size."""
         print(f"This car has a {self.battery_size}-kWh battery.")
@@ -130,3 +134,26 @@ class ElectricCar(Car):
 my_tesla = ElectricCar('tesla', 'model s', 2019)
 print(my_tesla.get_descriptive_name())
 my_tesla.describe_battery()
+
+
+class Animal:
+    def __init__(self, character):
+        self.character = character
+    
+    def make_sound(self):
+        print(f"I can {self.character}")
+
+class Dog(Animal):
+    def __init__(self):
+        super().__init__("Dog")
+        self.canBell = True
+    def make_sound(self):
+        print (f"i can Bell")
+
+
+class Cat(Animal):
+    def __init__(self):
+        super().__init__("C")
+        self.canBell = False
+    def make_sound(self):
+        print (f"i can Meow")
