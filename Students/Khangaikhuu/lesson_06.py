@@ -659,3 +659,12 @@ if calc_addition(4, 5) == 9:
     print ("Your function is correct")
 else:
     print ("Your function is false")
+
+
+
+# XML - SOAP
+# JSON 
+# GraphQL
+# Protobuffer - protobuf 
+
+
