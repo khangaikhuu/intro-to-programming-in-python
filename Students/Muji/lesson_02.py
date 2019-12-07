@@ -1,4 +1,5 @@
 # Lesson 02 Homework assignment
+# String and Methods
 # ---------------------------------
 print("# 1.1")
 person='Elon Mask'
