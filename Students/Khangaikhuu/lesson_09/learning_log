@@ -1,0 +1,11 @@
+pip3 install virtualenv
+
+python -m pip install --upgrade pip
+
+sudo apt install python3.7-venv -> LINUX
+
+pip3 install --user virtualenv
+
+source ll_env/bin/activate
+
+deactivate
