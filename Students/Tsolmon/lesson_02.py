@@ -203,7 +203,12 @@ available. Think of three more guests to invite to dinner.
     • Use append() to add one new guest to the end of your list.
     • Print a new set of invitation messages, one for each person in your list.
 """
-
+invitation_list.insert(0, 'batman')
+invitation_list.insert(2, 'superman')
+invitation_list.insert(5, 'spiderman')
+print(f"{invitation_list[0].title()}, You are invited to the dinner")
+print(f"{invitation_list[2].title()}, You are invited to the dinner")
+print(f"{invitation_list[5].title()}, You are invited to the dinner")
 """
 
 Ex-2.6 - You just found out that your new dinner table won’t
