@@ -2,8 +2,8 @@
 {% block content %}
 <p>Topics</p>
 <ul>
-    {% for topic in topics %}
-        <li>{{ topic }}</li>
+    {% for i in topics %}
+        <li>{{ i }}</li>
     {% empty %}
         <li>No topics have been added yet.</li>
     {% endfor %}
