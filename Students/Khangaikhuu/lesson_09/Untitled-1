@@ -1,0 +1,11 @@
+1. Create the project
+1.1 Go to https://start.spring.io/
+1.2 Choose Web, DevTools, Actuator in Dependency
+1.3 Copy to the project
+2. Make the CI pipeline
+3. Commit to the gitlab
+4. Pull the Image
+5. Run
+6. Have fun
+7. Deploy the JAR to Heroku
+8. Run it
