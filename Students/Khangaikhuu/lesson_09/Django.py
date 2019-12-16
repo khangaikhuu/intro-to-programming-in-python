@@ -19,6 +19,8 @@ python -m venv ll_env
 
 # Activating virtual environment 
 source ll_env/bin/activate
+# for windows
+/../../activate
 
 # For deactivating 
 deactivate
