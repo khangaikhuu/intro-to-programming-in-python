@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'p1ecnr^v*qar*9=b$2joo0--c1otmqn(e+s=g802xgs_i+^d%i'
+SECRET_KEY = '03cgv6i+*^u0x0c%3e&$d(yx69subj27ox9=#)=c=m25$6awy0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -31,9 +31,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    # My apps
-    'learning_logs',
-    # Default django apps.
     'learning_logs',
     'django.contrib.admin',
     'django.contrib.auth',
